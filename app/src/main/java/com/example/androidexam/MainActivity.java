@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          country = findViewById(R.id.country);
 
         ArrayList<String> countries = new ArrayList<>();
-        countries.add("United Sates");
-        countries.add("Germany");
-        countries.add("Other");
+        countries.add(getString(R.string.US));
+        countries.add(getString(R.string.Ger));
+        countries.add(getString(R.string.etc));
 
         ArrayAdapter<String> countriesAdpater = new ArrayAdapter<>(
                 this,
@@ -70,7 +70,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(!TextUtils.isEmpty(name.getText())
                     && !TextUtils.isEmpty(email.getText())
                     && !TextUtils.isEmpty(password.getText())
-                    && license.isChecked() && radioCheck()){
+                    && license.isChecked() && radioCheck()
+                    && spinnerCheck()){
 
                     showSnackbar();
                     break;
@@ -95,5 +96,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else
             return true;
+    }
+
+    public boolean spinnerCheck(){
+        if(country.getSelectedItem() != null){
+            return true;
+        }
+        else return false;
     }
 }

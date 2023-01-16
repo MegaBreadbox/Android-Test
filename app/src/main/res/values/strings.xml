@@ -2,4 +2,18 @@
     <string name="app_name">Android Exam</string>
     <string name="Registration">Registration complete</string>
     <string name="Empty">Error, missing information</string>
+    <string name="US">United States</string>
+    <string name="Ger">Germany</string>
+    <string name="etc">Other</string>
+    <string name="country">Country</string>
+    <string name="licence">You agree to the terms of the license</string>
+    <string name="image">Image</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="agreement">I agree</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="register">Register</string>
 </resources>
